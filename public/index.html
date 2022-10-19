@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass</title>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+<main class="min-h-[100vh] flex items-center justify-center" style="background-image: url(../img/bg/hologram.jpg);">
+
+    <glass class="glass bg-white/10 min-h-[100vh] w-[100%] rounded-lg">
+        <!-- HEADER START -->
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                        <div class="px-4">
+                            <a href="#hero" class="font-bold text-lg text-dark block py-6 hover:text-sky-400">RPL</a>
+                        </div>
+                        <div class="flex items-center px-4">
+                            <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                                <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                                <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                                <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                            </button>
+                            
+                            <nav id="nav-menu" class="hidden absolute py-5 backdrop-blur-sm bg-white/60 shadow-sm rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-800 lg:dark:bg-transparent">
+                                <ul class="block lg:flex">
+                                    <li class="group">
+                                        <a href="#" class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400 dark:text-white">Beranda</a>
+                                    </li>
+                                    <li class="group">
+                                        <a href="#profile" class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400 dark:text-white">Profile</a>
+                                    </li>
+                                    <li class="group">
+                                        <a href="#visi-misi" class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400 dark:text-white">Visi-Misi</a>
+                                    </li>
+                                    <li class="group">
+                                        <a href="#identitas" class="text-base text-dark py-2 mx-8 flex group-hover:text-sky-400 dark:text-white">Identitas</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+
+        <section id="hero" class="max-w-full h-[100vh]">
+            <div class="grid justify-center">
+                <div class="flex mt-[170px] text-[50px] font-bold">
+                    <h1 class="text-slate-900">Lab Pemrograman RPL <br> SMK Muhammadiyah <br> Kota Tasikmalaya.</h1>
+                    <img src="../img/elements/rocket.png" alt="" class="lg:w-[350px] lg:h-[250px]">
+                </div>
+                <div class="md:text-[13] text-slate-900"><p><b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing elit.<br> iusto dolore suscipit dignissimos quisquam dolorem incidunt!</p></div>
+            </div>
+        </section>
+
+        <section id="profile" class="bg-white/50 h-[100vh] rounded-t-[50px] py-[150px]">
+            <div class="grid justify-center text-center">
+                <div class="m-auto  bg-slate-900 rounded-full my-2 hover:bg-slate-900/50">
+                    <img src="../img/icon/company.svg"alt="" class="w-[70px]">
+                </div>
+                <h2 class="text-[30px] font-bold text-slate-900">Profile</h2>
+                <p class="text-[20px]">Lab Pemrograman SMK Muhammadiyah</p>
+                
+                <div class="w-[600px] hover:w-[650px] h-[300px] transition duration-600 ease-in-out bg-white/30 rounded-2xl hover:shadow-lg">
+                    <p class="p-10 text-slate-800">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, id ipsam iusto illo, odio, repellat delectus ducimus impedit consequatur quis quidem unde? Dignissimos nisi eligendi quas, ullam labore placeat debitis iure impedit accusantium recusandae optio incidunt blanditiis eum qui aliquam! Officia corporis quo ipsum natus sunt quam iure adipisci tempore eius, beatae, ea reprehenderit libero ratione accusantium molestiae quos nulla rem non sed quod voluptatibus eos sequi explicabo voluptate. Neque!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="visi-misi" class="max-w-full h-[150vh] py-[100px]">
+            <div class="grid justify-center text-center mb-5">
+                <h2 class="text-[30px] font-bold text-slate-900">Visi-Misi</h2>
+                <p class="text-[20px]">Lab Pemrograman SMK Muhammadiyah</p>
+            </div>
+            <div class="flex justify-center gap-11">
+                <div class="w-[600px] h-[650px] border-[1px] border-white/50 bg-white/10 rounded-2xl shadow-md">
+                    <h3 class="text-center text-[25px] font-bold mt-2 text-slate-800">Visi</h3>
+                    <p class="p-5 text-slate-800">Menghasilkan lulusan professional di bidang perangkat lunak yang berwawasan entrepreneurship berbudi pekerti, jujur, dan memiliki loyalitas tinggi serta berakhlakul karimah.</p>
+
+                    <h3 class="text-center text-[25px] font-bold mt-10 text-slate-800">Misi</h3>
+                    <p class="p-5 text-slate-800 leading-9"> 
+                        1.Menyiapkan peserta didik menjadi insan yang bertaqwa kepada Allah SWT.
+                        <br>
+                        2.Menyiapkan peserta didik yang mampu membuka lapangan usaha sendiri secara profesional.
+                        <br>
+                        3.Meningkatkan mutu proses belajar mengajar baik secara akademis, konseptual, maupun factual.
+                        <br>
+                        4.Menghasilkan peserta didik yang loyal terhadap persyarikatan dan bermanfaat baik untuk dirinya, keluarga dan masyarakat.
+                        <br>
+                        5.Menyiapkan sarana dan prasarana yang menunjang pada proses pembelajaran. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="identitas" class="bg-white/50 h-[100vh] rounded-[50px] py-[150px]">
+            <div class="grid justify-center text-center mb-5">
+                <div class="m-auto  bg-slate-900 rounded-full my-2 hover:bg-slate-900/50">
+                    <img src="../img/icon/identitas.svg"alt="" class="w-[70px]">
+                </div>
+                <h2 class="text-[30px] font-bold text-slate-900">Identitas</h2>
+                <p class="text-[20px]">Lab Pemrograman SMK Muhammadiyah</p>
+                <p class="p-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non minima earum hic fugiat, quas, nam explicabo voluptatem est distinctio iste qui reprehenderit a natus veniam neque et quis culpa illo quasi eligendi. Sequi laudantium quaerat labore eligendi repudiandae minus nostrum officiis eos optio voluptatem esse, debitis hic, est corrupti ab. Obcaecati voluptate minus expedita cumque asperiores necessitatibus, sit in accusantium debitis aperiam vero id vitae dolorem libero. Porro totam similique quidem odit placeat maiores officia cumque aliquam illum, saepe voluptatem, id veritatis amet cupiditate nobis? Veritatis ipsum praesentium repellendus tempore.</p>
+            </div>
+        </section>
+
+        <footer class="w-full h-32 bg-transparent">
+            <a href="https://www.instagram.com/dzikrirahmadani_/" target="_blank" class="flex justify-center py-14 text-slate-900">© Created with 👍 by Dzikri Rahmadani</a>
+        </footer>
+
+    </glass>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
