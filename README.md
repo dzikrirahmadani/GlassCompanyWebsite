@@ -1,1 +1,1 @@
-![Demo](demo-smk.png)
+![Demo](demo-smk.jpg)
